@@ -1,10 +1,10 @@
-package pages;
+package com.cybertek.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import utilities.ConfigurationReader;
-import utilities.Driver;
+import com.cybertek.utilities.ConfigurationReader;
+import com.cybertek.utilities.Driver;
 
 public class LoginPage {
 
@@ -19,7 +19,7 @@ public class LoginPage {
     public WebElement password;
 
     @FindBy(xpath = "//button[@type='submit']")
-    public WebElement login;
+    public WebElement loginButton;
 
     @FindBy(xpath = "//a[@href='/web?db=BriteErpDemo']")
     public WebElement BriteErpDemoButton;
@@ -30,26 +30,26 @@ public class LoginPage {
     public void managerUserLogin() {
         userName.sendKeys(ConfigurationReader.getProperty("managerUserName"));
         password.sendKeys(ConfigurationReader.getProperty("managerPassword"));
-        login.click();
+        loginButton.click();
     }
 
     public void salesUserLogin() {
         userName.sendKeys(ConfigurationReader.getProperty("salesUserName"));
         password.sendKeys(ConfigurationReader.getProperty("salesPassword"));
-        login.click();
+        loginButton.click();
     }
 
 
     public void negativeManagerUserLogin() {
         userName.sendKeys(ConfigurationReader.getProperty("managerUserName"));
         password.sendKeys(ConfigurationReader.getProperty("managerWrongPassword"));
-        login.click();
+        loginButton.click();
     }
 
     public void negativeSalesUserLogin() {
         userName.sendKeys(ConfigurationReader.getProperty("salesUserName"));
         password.sendKeys(ConfigurationReader.getProperty("salesWrongPassword"));
-        login.click();
+        loginButton.click();
     }
 
     public void open() {
