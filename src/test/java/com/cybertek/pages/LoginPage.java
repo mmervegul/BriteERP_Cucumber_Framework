@@ -27,35 +27,7 @@ public class LoginPage {
     @FindBy(xpath = "//p[@class='alert alert-danger']")
     public WebElement wrongLoginPasswordMessage;
 
-    public void managerUserLogin() {
-        userName.sendKeys(ConfigurationReader.getProperty("managerUserName"));
-        password.sendKeys(ConfigurationReader.getProperty("managerPassword"));
-        loginButton.click();
-    }
 
-    public void salesUserLogin() {
-        userName.sendKeys(ConfigurationReader.getProperty("salesUserName"));
-        password.sendKeys(ConfigurationReader.getProperty("salesPassword"));
-        loginButton.click();
-    }
-
-
-    public void negativeManagerUserLogin() {
-        userName.sendKeys(ConfigurationReader.getProperty("managerUserName"));
-        password.sendKeys(ConfigurationReader.getProperty("managerWrongPassword"));
-        loginButton.click();
-    }
-
-    public void negativeSalesUserLogin() {
-        userName.sendKeys(ConfigurationReader.getProperty("salesUserName"));
-        password.sendKeys(ConfigurationReader.getProperty("salesWrongPassword"));
-        loginButton.click();
-    }
-
-    public void open() {
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-
-    }
 
 
 }

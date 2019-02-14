@@ -17,10 +17,10 @@ public class DirectMessagePage {
     @FindBy(xpath = "(//input[@class='o_input ui-autocomplete-input'])[2]")
     public WebElement usernameSearchBox;
 
-    @FindBy(xpath = "//li[@class='ui-menu-item']/a['SalesManager4']")
+    @FindBy(xpath = "//a[.='SalesManager4']")
     public WebElement salesManager4;
 
-    @FindBy(xpath = "//div[@class='o_chat_composer o_chat_inline_composer']//div/div/div/textarea[@class='o_input o_composer_text_field']")
+    @FindBy(xpath = "(//div[@class='o_composer_input']/textarea[@class='o_input o_composer_text_field'])[1]")
     public WebElement writeSomethingBoxForDirectMessage;
 
     @FindBy(xpath = "(//button[@class='btn btn-sm btn-icon fa fa-smile-o o_composer_button_emoji'])[1]")
