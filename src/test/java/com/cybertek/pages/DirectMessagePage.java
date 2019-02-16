@@ -29,10 +29,13 @@ public class DirectMessagePage {
     @FindBy(xpath = "//button[@title='Party']")
     public WebElement directMessagePartyEmoji;
 
+    @FindBy(xpath = "(//div[@class='o_thread_message_content']/p)[9]")
+    public WebElement getMessage;
+
     @FindBy(xpath = "//button[@class='btn btn-sm btn-primary o_composer_button_send hidden-xs']")
     public WebElement directMessageSendButton;
 
-    @FindBy(xpath = "//div[@title='SalesUser3']//span[@class='fa fa-times o_mail_partner_unpin ']")
-    public WebElement leaveFromSalesManager3Channel;
+    @FindBy(xpath = "(//div[@title='SalesManager4']//span[@title='Leave this channel'])[1]")
+    public WebElement leaveFromSalesManager4Channel;
 
 }
