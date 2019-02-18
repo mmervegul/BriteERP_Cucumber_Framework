@@ -15,9 +15,7 @@ public class ConfigurationReader {
             FileInputStream fileInputStream = new FileInputStream(path);
 
             properties = new Properties();
-
             properties.load(fileInputStream);
-
             fileInputStream.close();
 
         } catch (IOException e) {
@@ -26,7 +24,6 @@ public class ConfigurationReader {
     }
 
     public static String getProperty(String property) {
-
         return properties.getProperty(property);
     }
 }

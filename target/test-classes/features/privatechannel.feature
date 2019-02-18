@@ -7,7 +7,7 @@ Feature: Private channel functionality
     And the manager enters valid password
     And the manager clicks on Login button
 
-  @wip
+
   Scenario: As a manager user I should be able to send private message
     Then click on private message plus sign button
     Then the manager enters private valid user name
@@ -15,3 +15,4 @@ Feature: Private channel functionality
     When click on private message emoji button
     And click on Thumbs Up emoji
     Then click on Send button to send private message
+

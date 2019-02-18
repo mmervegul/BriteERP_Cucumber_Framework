@@ -4,6 +4,7 @@ import com.cybertek.pages.LoginPage;
 import com.cybertek.utilities.ConfigurationReader;
 import com.cybertek.utilities.Driver;
 import cucumber.api.java.en.*;
+import static org.junit.Assert.*;
 
 public class LoginPageStepDefinitions {
 
@@ -40,6 +41,19 @@ public class LoginPageStepDefinitions {
         loginPage.loginButton.click();
     }
 
+    @When("the manager enters invalid password")
+    public void the_manager_enters_invalid_password() {
+        System.out.println("Entering manager wrong password");
+       loginPage.password.sendKeys(ConfigurationReader.getProperty("managerWrongPassword"));
+    }
+
+    @Then("the manager sees {string} message")
+    public void the_manager_sees_message(String message) {
+        System.out.println("Invalid login error message : " + loginPage.wrongLoginPasswordMessage.getText());
+        System.out.println("Verifying actual invalid login message equals to expected invalid login message");
+        assertEquals(message, loginPage.wrongLoginPasswordMessage.getText());
+    }
+
     // USER LOGIN
 
     @Given("the user is on the landing page")
@@ -71,6 +85,22 @@ public class LoginPageStepDefinitions {
         System.out.println("Clicking on login button");
         loginPage.loginButton.click();
     }
+
+    @When("the user enters invalid password")
+    public void the_user_enters_invalid_password() {
+        System.out.println("Entering sales wrong password");
+        loginPage.password.sendKeys(ConfigurationReader.getProperty("salesWrongPassword"));
+    }
+
+    @Then("the user sees {string} message")
+    public void the_user_sees_message(String message) {
+        System.out.println("Invalid login error message : " + loginPage.wrongLoginPasswordMessage.getText());
+        System.out.println("Verifying actual invalid login message equals to expected invalid login message");
+        assertEquals(message, loginPage.wrongLoginPasswordMessage.getText());
+    }
+
+
+
 
 
 
