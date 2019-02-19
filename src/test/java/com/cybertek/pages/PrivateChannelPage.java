@@ -38,5 +38,9 @@ public class PrivateChannelPage {
     @FindBy(xpath = "//button[@title='Unsubscribe from channel']")
     public WebElement unsubscribeButton;
 
+    @FindBy(xpath = "//span[@class='o_thread_date']")
+    public WebElement date;
+
+
 
 }
