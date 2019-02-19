@@ -35,4 +35,8 @@ public class PrivateChannelPage {
     @FindBy(xpath = "//div[@class='o_thread_message_content']//p")
     public WebElement getMessage;
 
+    @FindBy(xpath = "//button[@title='Unsubscribe from channel']")
+    public WebElement unsubscribeButton;
+
+
 }
