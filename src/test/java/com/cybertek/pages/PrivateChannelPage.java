@@ -41,6 +41,8 @@ public class PrivateChannelPage {
     @FindBy(xpath = "//span[@class='o_thread_date']")
     public WebElement date;
 
+    @FindBy(xpath = "//div[@title='SalesManager4']")
+    public WebElement SalesManager4PrivateChannelName;
 
 
 }

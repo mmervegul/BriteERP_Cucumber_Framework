@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.cybertek.utilities.Driver;
 
-public class GeneralChanelPage {
+public class GeneralChannelPage {
 
-    public GeneralChanelPage() {
+    public GeneralChannelPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -16,6 +16,9 @@ public class GeneralChanelPage {
 
     @FindBy(xpath = "(//input[@class='o_input ui-autocomplete-input'])[1]")
     public WebElement addAChannelBox;
+
+    @FindBy(className = "o_mail_open_channels")
+    public WebElement channelsButton;
 
     @FindBy(id = "ui-id-2")
     public WebElement clickName;

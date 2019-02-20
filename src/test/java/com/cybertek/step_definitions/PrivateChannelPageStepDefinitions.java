@@ -5,6 +5,7 @@ import com.cybertek.utilities.BrowserUtilities;
 import com.cybertek.utilities.Driver;
 import cucumber.api.java.en.*;
 import static org.junit.Assert.*;
+
 import org.openqa.selenium.Keys;
 
 public class PrivateChannelPageStepDefinitions {
@@ -72,6 +73,16 @@ public class PrivateChannelPageStepDefinitions {
     @Then("the manager user see messages date from any private channel")
     public void the_manager_user_see_messages_date_from_any_private_channel() {
         System.out.println("Messages date : " + privateChannelPage.date.getText());
+    }
+
+    @Then("the private channel name is equals new one")
+    public void the_private_channel_name_is_equals_new_one() {
+        String user = "SalesManager4";
+        System.out.println(privateChannelPage.SalesManager4PrivateChannelName.getText().substring(2));
+
+        System.out.println("Verifying actual private channel name is equal to actual private channel name");
+        assertTrue(privateChannelPage.SalesManager4PrivateChannelName.getText().contains(user));
+
     }
 
 

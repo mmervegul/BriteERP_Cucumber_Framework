@@ -23,6 +23,7 @@ public class StarredMessagePage {
     @FindBy(xpath = "//div[.='No starred message']")
     public WebElement emptyStarredMessageText;
 
-
+    @FindBy(xpath = "//span[@class='o_mail_sidebar_needaction badge ']")
+    public WebElement starredMessageCount;
 
 }

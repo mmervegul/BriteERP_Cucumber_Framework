@@ -22,7 +22,7 @@ Feature: Private channel functionality
     Then the manager user clicks on Send button to send private message
     And the manager user clicks on Unsubscribe button
 
-  Scenario: As a manager user I should be able to see private messages date
+  Scenario:As a manager user I should be able to see private messages date
     Then the manager user clicks on private message plus sign button
     Then the manager user enters private valid user name
     When the manager user writes something on private message Write something box
@@ -34,8 +34,13 @@ Feature: Private channel functionality
     And private channel plus sign is displayed
     Then the manager user enters private valid user name
 
-  @wip
   Scenario: As a manager user I should be able to see Add a private channel box when click on plus sign
     Then the manager user clicks on private message plus sign button
     And add a private channel box is displayed
     And the manager user enters private valid user name
+
+  Scenario: As a manager user I should be able to see same private channel name when create new one
+    Then the manager user clicks on private message plus sign button
+    And add a private channel box is displayed
+    And the manager user enters private valid user name
+    And the private channel name is equals new one
