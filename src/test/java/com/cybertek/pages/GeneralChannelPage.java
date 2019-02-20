@@ -20,6 +20,15 @@ public class GeneralChannelPage {
     @FindBy(className = "o_mail_open_channels")
     public WebElement channelsButton;
 
+    @FindBy(className = "ui-menu-item")
+    public WebElement createChannel;
+
+    @FindBy(xpath = "(//div[@title='new team'])[1]") // (//span[@class='o_channel_name'])[9]
+    public WebElement newTeam;
+
+    @FindBy(xpath = "//div[@class='o_thread_message_content']")
+    public WebElement createdChannelText;
+
     @FindBy(id = "ui-id-2")
     public WebElement clickName;
 
