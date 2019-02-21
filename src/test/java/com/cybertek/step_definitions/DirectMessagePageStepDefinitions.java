@@ -50,7 +50,6 @@ public class DirectMessagePageStepDefinitions {
         directMessagePage.writeSomethingBoxForDirectMessage.sendKeys("Hello");
     }
 
-
     @When("click on emoji button")
     public void click_on_emoji_button() {
         System.out.println("Clicking on emoji button");
@@ -75,6 +74,7 @@ public class DirectMessagePageStepDefinitions {
 
     @Then("click on x sign")
     public void click_on_x_sign() {
+        System.out.println("Clicking on x sign");
         directMessagePage.leaveFromSalesManager4Channel.click();
     }
 

@@ -95,6 +95,7 @@ public class LoginPageStepDefinitions {
     @Then("the user sees {string} message")
     public void the_user_sees_message(String message) {
         System.out.println("Invalid login error message : " + loginPage.wrongLoginPasswordMessage.getText());
+
         System.out.println("Verifying actual invalid login message equals to expected invalid login message");
         assertEquals(message, loginPage.wrongLoginPasswordMessage.getText());
     }

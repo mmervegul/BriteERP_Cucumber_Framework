@@ -29,11 +29,14 @@ public class GeneralChannelPage {
     @FindBy(xpath = "//div[@class='o_thread_message_content']")
     public WebElement createdChannelText;
 
+    @FindBy(xpath = "(//span[@class='o_channel_name'])[3]")
+    public WebElement discussionGroup;
+
     @FindBy(id = "ui-id-2")
     public WebElement clickName;
 
     @FindBy(xpath = "(//div[@title='general'])[1]")
-    public WebElement clickGeneralChannel;
+    public WebElement generalChannel;
 
     @FindBy(xpath = "//button[@class='btn btn-sm btn-link']")
     public WebElement showOlderMessages;
@@ -42,7 +45,7 @@ public class GeneralChannelPage {
     public WebElement inviteButton;
 
     @FindBy(xpath = "//li[@class='select2-search-field']")
-    public WebElement searchBox;
+    public WebElement inviteSearchBox;
 
     @FindBy(id = "select2-result-label-7")
     public WebElement EventsCRM_Manager4;

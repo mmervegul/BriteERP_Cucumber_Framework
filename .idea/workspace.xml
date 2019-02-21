@@ -4,8 +4,17 @@
     <list default="true" id="b2b6ad20-dde8-4602-b674-2386350fdfb7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/pages/GeneralChannelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/pages/GeneralChannelPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/DirectMessagePageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/DirectMessagePageStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/GeneralChannelPageStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/GeneralChannelPageStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/LoginPageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/LoginPageStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/generalchannel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/generalchannel.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/pages/GeneralChannelPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/pages/GeneralChannelPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/DirectMessagePageStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/DirectMessagePageStepDefinitions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/GeneralChannelPageStepDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/GeneralChannelPageStepDefinition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/LoginPageStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/LoginPageStepDefinitions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/generalchannel.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/generalchannel.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/login.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,33 +27,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/privatechannel.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/generalchannel.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="40" column="80" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
+            <state relative-caret-position="86">
+              <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/starredmessage.feature">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/login.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/utilities/Driver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/GeneralChannelPageStepDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="76" column="89" selection-start-line="76" selection-start-column="89" selection-end-line="76" selection-end-column="89" />
+            <state relative-caret-position="388">
+              <caret line="116" column="74" selection-start-line="116" selection-start-column="74" selection-end-line="116" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,10 +69,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/pages/InboxPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/LoginPageStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="831">
+              <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/PrivateChannelPageStepDefinitions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="74" column="71" selection-start-line="74" selection-start-column="67" selection-end-line="74" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/pages/GeneralChannelPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+            <state relative-caret-position="312">
+              <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -73,23 +104,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/DirectMessagePageStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" column="59" selection-start-line="14" selection-start-column="8" selection-end-line="16" selection-end-column="59" />
+            <state relative-caret-position="289">
+              <caret line="76" column="46" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/pages/StarredMessagePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-              <folding>
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#331#332#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,10 +116,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="34" column="29" selection-start-line="33" selection-start-column="7" selection-end-line="34" selection-end-column="29" />
+            <state relative-caret-position="325">
+              <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1378#1379#0" expanded="true" />
+                <element signature="e#1435#1436#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,18 +173,18 @@
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/pages/DirectMessagePage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/directmessage.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/DirectMessagePageStepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/utilities/ConfigurationReader.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/LoginPageStepDefinitions.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cybertek/utilities/Driver.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/pages/StarredMessagePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/pages/PrivateChannelPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/PrivateChannelPageStepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/privatechannel.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/generalchannel.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/cybertek/utilities/Driver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/DirectMessagePageStepDefinitions.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/pages/GeneralChannelPage.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/LoginPageStepDefinitions.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/generalchannel.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/GeneralChannelPageStepDefinition.java" />
       </list>
     </option>
@@ -172,7 +192,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="820" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -278,7 +298,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550687323119" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550791431854" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -363,42 +383,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CukesRunner - 2019.02.20 at 13h 05m 10s.xml">
+    <history-entry file="CukesRunner - 2019.02.21 at 16h 57m 00s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.20 at 13h 06m 08s.xml">
+    <history-entry file="CukesRunner - 2019.02.21 at 16h 57m 43s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.20 at 13h 10m 19s.xml">
+    <history-entry file="CukesRunner - 2019.02.21 at 16h 58m 19s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.20 at 13h 10m 40s.xml">
+    <history-entry file="CukesRunner - 2019.02.21 at 17h 58m 15s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.20 at 13h 17m 31s.xml">
+    <history-entry file="CukesRunner - 2019.02.21 at 17h 59m 49s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.20 at 13h 18m 33s.xml">
+    <history-entry file="CukesRunner - 2019.02.21 at 18h 04m 38s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.20 at 13h 21m 52s.xml">
+    <history-entry file="CukesRunner - 2019.02.21 at 18h 05m 44s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.20 at 13h 22m 56s.xml">
+    <history-entry file="CukesRunner - 2019.02.21 at 18h 19m 46s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.20 at 13h 23m 39s.xml">
+    <history-entry file="CukesRunner - 2019.02.21 at 18h 20m 22s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.20 at 13h 24m 26s.xml">
+    <history-entry file="CukesRunner - 2019.02.21 at 18h 20m 44s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="819" extended-state="6" />
+    <frame x="0" y="24" width="1440" height="820" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25035766" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25751072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -407,15 +427,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286908" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32462174" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31181318" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26236263" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.260989" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32921812" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32914925" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32599726" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32554945" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -510,23 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/LoginPageStepDefinitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="52" column="107" selection-start-line="52" selection-start-column="107" selection-end-line="52" selection-end-column="107" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/utilities/BrowserUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1975">
@@ -548,16 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/utilities/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="76" column="3" selection-start-line="71" selection-end-line="76" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/pages/PrivateChannelPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -569,23 +562,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/PrivateChannelPageStepDefinitions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/privatechannel.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="495">
+          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/DirectMessagePageStepDefinitions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/starredmessage.feature">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/pages/InboxPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="59" selection-start-line="14" selection-start-column="8" selection-end-line="16" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -600,16 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="34" column="29" selection-start-line="33" selection-start-column="7" selection-end-line="34" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/directmessage.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -617,41 +597,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/starredmessage.feature">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/privatechannel.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/utilities/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        <state relative-caret-position="325">
+          <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/pages/InboxPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/DirectMessagePageStepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="76" column="46" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/generalchannel.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/PrivateChannelPageStepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="40" column="80" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
+        <state relative-caret-position="287">
+          <caret line="74" column="71" selection-start-line="74" selection-start-column="67" selection-end-line="74" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/pages/GeneralChannelPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        <state relative-caret-position="312">
+          <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/LoginPageStepDefinitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="831">
+          <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/login.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1378#1379#0" expanded="true" />
+            <element signature="e#1435#1436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/generalchannel.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/GeneralChannelPageStepDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="76" column="89" selection-start-line="76" selection-start-column="89" selection-end-line="76" selection-end-column="89" />
+        <state relative-caret-position="388">
+          <caret line="116" column="74" selection-start-line="116" selection-start-column="74" selection-end-line="116" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

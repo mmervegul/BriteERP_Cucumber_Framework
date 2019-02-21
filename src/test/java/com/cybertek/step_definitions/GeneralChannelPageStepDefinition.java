@@ -5,6 +5,9 @@ import com.cybertek.utilities.Driver;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -77,6 +80,64 @@ public class GeneralChannelPageStepDefinition {
         System.out.println("Verifying actual channel text is equals expected channel text");
         assertTrue(generalChannelPage.createdChannelText.getText().equals("created #new team"));
     }
+
+    @When("the manager clicks Discussion Group channel")
+    public void the_manager_clicks_Discussion_Group_channel() {
+        System.out.println("Clicking on Discussion Group channel");
+        generalChannelPage.discussionGroup.click();
+    }
+
+    @Then("the manager clicks on Invite button")
+    public void the_manager_clicks_on_Invite_button() {
+        System.out.println("Clicking on Invite button");
+        generalChannelPage.inviteButton.click();
+    }
+
+    @Then("the manager clicks on Invite search box")
+    public void the_manager_clicks_on_Invite_search_box() {
+        System.out.println("Clicking on Invite search box");
+        generalChannelPage.inviteSearchBox.click();
+    }
+
+    @Then("Invite search box is displayed")
+    public void invite_search_box_is_displayed() {
+        System.out.println("Verifying invite search box is displayed");
+        assertTrue(generalChannelPage.inviteSearchBox.isDisplayed());
+
+    }
+
+    @Then("the manager writes valid username")
+    public void the_manager_writes_valid_username() {
+        System.out.println("Writing valid username to invite search box");
+        generalChannelPage.EventsCRM_Manager4.click();
+    }
+
+    @Then("the manager writes second valid username")
+    public void the_manager_writes_second_valid_username() {
+        System.out.println("Writing second valid username to invite search");
+        generalChannelPage.EventsCRM_Manager5.click();
+    }
+
+    @Then("the manager clicks on second Invite button")
+    public void the_manager_clicks_on_second_Invite_button() {
+        System.out.println("Clicking on second Invite button to channel");
+        generalChannelPage.secondInviteButton.click();
+    }
+
+    @Then("all valid username is displayed")
+    public void all_valid_username_is_displayed() {
+        System.out.println("Displaying all valid username");
+
+        List<WebElement> allUsers = Driver.getDriver().findElements(By.xpath("//div[@id='select2-drop']"));
+
+        for (WebElement str : allUsers) {
+            System.out.println(str.getText());
+        }
+    }
+
+
+
+
 
 
 }

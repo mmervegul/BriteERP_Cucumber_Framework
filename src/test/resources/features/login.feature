@@ -32,7 +32,7 @@ Feature: Login test
     And the user enters invalid password
     Then the user clicks on Login button
     Then the user sees "<error>" message
-     Examples:
-     | error                |
-     | Wrong login/password |
+    Examples:
+      | error                |
+      | Wrong login/password |
 
