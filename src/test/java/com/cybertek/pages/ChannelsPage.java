@@ -12,6 +12,9 @@ public class ChannelsPage {
     }
 
     @FindBy(className = "o_mail_open_channels")
+    public WebElement channelsButton;
+
+    @FindBy(className = "o_mail_open_channels")
     public WebElement channelsLink;
 
     @FindBy(xpath = "(//button[@class='btn btn-primary pull-right btn-sm oe_kanban_action oe_kanban_action_button'])[6]")

@@ -7,9 +7,6 @@ Feature: General channel functionality
     And the manager enters valid password
     And the manager clicks on Login button
 
-  Scenario: As a manager user I should be able to click on Channels button
-    Then the manager user clicks on Channels button
-
   Scenario: As a manager user I should be able to click on channels plus sign
     When the manager user clicks on channels plus sign
     And channels plus sign is clickable
@@ -71,13 +68,22 @@ Feature: General channel functionality
     When the manager clicks on general channel
     And all new messages are displayed
 
-    @wip
   Scenario: As a manager user I should be able to click on Show older message link
     When the manager clicks on general channel
     Then the manager clicks on Show older message link
     And all older messages are displayed
 
+  Scenario: As a manager user I should be able to see messages date
+    When the manager clicks on general channel
+    Then the manager clicks on Show older message link
+    And all older messages are displayed
+    And the manager sees messages date
 
-
+  Scenario: As a manager user I should be able to click on valid username
+    When the manager clicks on general channel
+    Then the manager clicks on Show older message link
+    And all older messages are displayed
+    And the manager sees messages date
+    And the manager clicks on username
 
 

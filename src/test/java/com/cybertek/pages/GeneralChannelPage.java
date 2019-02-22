@@ -17,13 +17,10 @@ public class GeneralChannelPage {
     @FindBy(xpath = "(//input[@class='o_input ui-autocomplete-input'])[1]")
     public WebElement addAChannelBox;
 
-    @FindBy(className = "o_mail_open_channels")
-    public WebElement channelsButton;
-
     @FindBy(className = "ui-menu-item")
     public WebElement createChannel;
 
-    @FindBy(xpath = "(//div[@title='new team'])[1]") // (//span[@class='o_channel_name'])[9]
+    @FindBy(xpath = "(//div[@title='new team'])[1]")
     public WebElement newTeam;
 
     @FindBy(xpath = "//div[@class='o_thread_message_content']")
@@ -55,6 +52,9 @@ public class GeneralChannelPage {
 
     @FindBy(xpath = "//span[.='Invite']")
     public WebElement secondInviteButton;
+
+    @FindBy(xpath = "(//*[@class='o_thread_author o_mail_redirect'])[1]")
+    public WebElement manufacturingManager;
 
     @FindBy(xpath = "//div[.='EventsCRM_Manager4']")
     public WebElement selectedUser;

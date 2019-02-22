@@ -11,15 +11,9 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class GeneralChannelPageStepDefinition {
+public class GeneralChannelPageStepDefinitions {
 
     GeneralChannelPage generalChannelPage = new GeneralChannelPage();
-
-    @Then("the manager user clicks on Channels button")
-    public void the_manager_user_clicks_on_Channels_button() {
-        System.out.println("Clicking on Channels button");
-        generalChannelPage.channelsButton.click();
-    }
 
     @When("the manager user clicks on channels plus sign")
     public void the_manager_user_clicks_on_channels_plus_sign() {
@@ -145,9 +139,9 @@ public class GeneralChannelPageStepDefinition {
     public void all_new_messages_are_displayed() {
         System.out.println("Displaying all new messages");
 
-        List<WebElement> allMessages = Driver.getDriver().findElements(By.xpath("//div[@class='o_thread_message_content']"));
+        List<WebElement> newMessages = Driver.getDriver().findElements(By.xpath("//div[@class='o_thread_message_content']"));
 
-        for(WebElement message : allMessages) {
+        for(WebElement message : newMessages) {
             System.out.println(message.getText());
         }
     }
@@ -168,6 +162,24 @@ public class GeneralChannelPageStepDefinition {
             System.out.println(message.getText());
         }
     }
+
+    @Then("the manager sees messages date")
+    public void the_manager_sees_messages_date() {
+        System.out.println("Displaying all messages date");
+
+        List<WebElement> messagesDate = Driver.getDriver().findElements(By.xpath("//span[@class='o_thread_date']"));
+
+        for(WebElement date : messagesDate) {
+            System.out.println(date.getText());
+        }
+    }
+
+    @Then("the manager clicks on username")
+    public void the_manager_clicks_on_username() {
+        System.out.println("Clicking on username");
+        generalChannelPage.manufacturingManager.click();
+    }
+
 
 
 
