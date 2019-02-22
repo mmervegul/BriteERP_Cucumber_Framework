@@ -135,8 +135,39 @@ public class GeneralChannelPageStepDefinition {
         }
     }
 
+    @When("the manager clicks on general channel")
+    public void the_manager_clicks_on_general_channel() {
+        System.out.println("Clicking on general channel");
+        generalChannelPage.generalChannel.click();
+    }
 
+    @When("all new messages are displayed")
+    public void all_new_messages_are_displayed() {
+        System.out.println("Displaying all new messages");
 
+        List<WebElement> allMessages = Driver.getDriver().findElements(By.xpath("//div[@class='o_thread_message_content']"));
+
+        for(WebElement message : allMessages) {
+            System.out.println(message.getText());
+        }
+    }
+
+    @Then("the manager clicks on Show older message link")
+    public void the_manager_clicks_on_Show_older_message_link() {
+        System.out.println("Clicking on Show older message link");
+        generalChannelPage.showOlderMessages.click();
+    }
+
+    @Then("all older messages are displayed")
+    public void all_older_messages_are_displayed() {
+        System.out.println("Displaying all older messages");
+
+        List<WebElement> olderMessages = Driver.getDriver().findElements(By.className("o_mail_thread"));
+
+        for(WebElement message : olderMessages){
+            System.out.println(message.getText());
+        }
+    }
 
 
 

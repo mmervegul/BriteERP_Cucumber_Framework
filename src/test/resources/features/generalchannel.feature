@@ -67,6 +67,16 @@ Feature: General channel functionality
     And Invite search box is displayed
     And all valid username is displayed
 
+  Scenario: As a manager user I should be able to see all new messages
+    When the manager clicks on general channel
+    And all new messages are displayed
+
+    @wip
+  Scenario: As a manager user I should be able to click on Show older message link
+    When the manager clicks on general channel
+    Then the manager clicks on Show older message link
+    And all older messages are displayed
+
 
 
 
