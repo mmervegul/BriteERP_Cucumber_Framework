@@ -2,7 +2,6 @@ Feature: Login test
 
   Background: Go to login page from homepage
     Given the manager is on the landing page
-    When the manager clicks on BriteErpDemo button
 
   @managerpositivelogin
   Scenario: As a manager user, I should be able to login

@@ -17,12 +17,6 @@ public class LoginPageStepDefinitions {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
-    @When("the manager clicks on BriteErpDemo button")
-    public void the_manager_clicks_on_BriteErpDemo_button() {
-        System.out.println("Clicking on BriteErp Demo button");
-        loginPage.BriteErpDemoButton.click();
-    }
-
     @When("the manager enters valid email address")
     public void the_manager_enters_valid_email_address() {
         System.out.println("Entering manager username");

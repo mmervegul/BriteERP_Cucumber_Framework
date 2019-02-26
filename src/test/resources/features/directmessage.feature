@@ -2,7 +2,6 @@ Feature: Direct message functionality
 
   Background: Go to login page from homepage
     Given the manager is on the landing page
-    When the manager clicks on BriteErpDemo button
     And the manager enters valid email address
     And the manager enters valid password
     And the manager clicks on Login button
