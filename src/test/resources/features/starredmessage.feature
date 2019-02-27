@@ -22,5 +22,19 @@ Feature: Starred message functionality
     Then this message is displayed in starred message
     Then the starred message count is displayed
 
+  Scenario: As a manager user I should be able to see starred message date
+    When the manager clicks on general channel
+    Then this message is displayed in starred message
+    Then the starred message count is displayed
+    And the manager sees starred message date
 
+  Scenario: As a manager user I should be able to see user name
+    When the manager clicks on general channel
+    Then this message is displayed in starred message
+    And the user name is displayed in starred message
+
+  Scenario: As a manager user I should be able to delete starred message
+    When the manager clicks on general channel
+    Then this message is displayed in starred message
+    And the manager deletes starred message
 

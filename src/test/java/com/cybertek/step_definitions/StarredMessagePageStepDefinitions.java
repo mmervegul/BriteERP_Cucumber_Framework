@@ -4,6 +4,8 @@ import com.cybertek.pages.StarredMessagePage;
 import com.cybertek.utilities.Driver;
 import cucumber.api.java.en.Then;
 import static org.junit.Assert.*;
+
+import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -49,6 +51,22 @@ public class StarredMessagePageStepDefinitions {
     public void the_starred_message_count_is_displayed() {
         System.out.println("Starred message count is : " + starredMessagePage.starredMessageCount.getText());
     }
+
+    @Then("the manager sees starred message date")
+    public void the_manager_sees_starred_message_date() {
+        System.out.println("Starred message date is : " + starredMessagePage.starredMessageDate.getText());
+    }
+
+    @Then("the user name is displayed in starred message")
+    public void the_user_name_is_displayed_in_starred_message() {
+        System.out.println("The user name is : " + starredMessagePage.starredMessageUserName.getText());
+    }
+
+    @Then("the manager deletes starred message")
+    public void the_manager_deletes_starred_message() {
+        starredMessagePage.deleteStarredMessage.click();
+    }
+
 
 
 }

@@ -15,7 +15,6 @@ Feature: Starred message functionality
     And the manager clicks on star icon
     Then this message is displayed in starred message
 
-  @wip
   Scenario: As a manager user I should be able to see starred message count
     When the manager clicks on general channel
     Then the general channel messages are displayed
@@ -23,5 +22,23 @@ Feature: Starred message functionality
     Then this message is displayed in starred message
     Then the starred message count is displayed
 
+  Scenario: As a manager user I should be able to see starred message date
+    When the manager clicks on general channel
+    Then this message is displayed in starred message
+    Then the starred message count is displayed
+    And the manager sees starred message date
 
+  Scenario: As a manager user I should be able to see user name
+    When the manager clicks on general channel
+    Then this message is displayed in starred message
+    And the user name is displayed in starred message
 
+  Scenario: As a manager user I should be able to delete starred message
+    When the manager clicks on general channel
+    Then this message is displayed in starred message
+    And the manager deletes starred message
+
+   @wip
+   Scenario: As a manager user I should be able to see empty starred message text
+     And the manager deletes starred message
+     And the manager sees empty starred message text
