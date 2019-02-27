@@ -33,6 +33,27 @@ public class ChannelsPage {
     @FindBy(xpath = "(//button[@class='fa fa-trash-o o_list_record_delete_btn'])[2]")
     public WebElement trashcanIconForSalesManager3;
 
+    @FindBy(xpath = "//td[contains(text(),'ManufacturingManager4')]")
+    public WebElement manufacturingManager4User;
+
+    @FindBy(xpath = "//a[contains(text(),'ManufacturingManager4')]")
+    public WebElement expectedManufacturingManager4User;
+
+    @FindBy(xpath = "//a[contains(text(),'ManufacturingManager5')]")
+    public WebElement expectedManufacturingManager5User;
+
+    @FindBy(xpath = "(//a[contains(text(),'SalesManager')])[2]")
+    public WebElement expectedSalesManagerUser;
+
+    @FindBy(xpath = "//span[.='Close']")
+    public WebElement closeButton;
+
+    @FindBy(xpath = "//td[contains(text(),'ManufacturingManager5')]")
+    public WebElement manufacturingManager5User;
+
+    @FindBy(xpath = "//td[contains(text(),'SalesManager')]")
+    public WebElement salesManagerUser;
+
     @FindBy(xpath = "(//button[@class='btn btn-primary pull-right btn-sm oe_kanban_action oe_kanban_action_button'])[3]")
     public WebElement leaveButtonForTeamChannel;
 
@@ -51,6 +72,8 @@ public class ChannelsPage {
     @FindBy(xpath = "//a[.='Members']")
     public WebElement membersButton;
 
+    @FindBy(xpath = "(//span[contains(text(), 'sales')])[1]")
+    public WebElement salesChannelName;
 
 
 

@@ -4,6 +4,7 @@ import com.cybertek.pages.ChannelsPage;
 import com.cybertek.utilities.Driver;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import static org.junit.Assert.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -66,6 +67,64 @@ public class ChannelsPageStepDefinitions {
         System.out.println("Clicking on trash can icon");
         channelsPage.trashcanIconForSalesManager3.click();
     }
+
+    @When("the manager clicks on sales channel")
+    public void the_manager_clicks_on_sales_channel() {
+        System.out.println("Clicking on sales channel name");
+        channelsPage.firstSalesChannel.click();
+    }
+
+    @When("the channel name is equal to the sales channel name")
+    public void the_channel_name_is_equal_to_the_sales_channel_name() {
+        System.out.println("Expected channel name is : " + channelsPage.firstSalesChannel.getText());
+
+        System.out.println("Verifying actual channel name equals to expected channel name");
+        assertEquals(channelsPage.firstSalesChannel.getText(), channelsPage.salesChannelName.getText());
+
+    }
+
+    @Then("the manager clicks on sales channel user name")
+    public void the_manager_clicks_on_sales_channel_user_name() {
+        System.out.println("Clicking on ManufacturingManager4 user");
+        channelsPage.manufacturingManager4User.click();
+
+        System.out.println("Clicking on ManufacturingManager5 user");
+        channelsPage.manufacturingManager5User.click();
+
+        System.out.println("Clicking on SalesManager user");
+        channelsPage.salesManagerUser.click();
+    }
+
+    @Then("the expected user names are equal to actual user names")
+    public void the_expected_user_names_are_equal_to_actual_user_names() {
+        System.out.println("Verifying actual user names equals to expected "
+                                + channelsPage.manufacturingManager4User.getText() + " user");
+        assertEquals(channelsPage.manufacturingManager4User.getText(), channelsPage.expectedManufacturingManager4User.getText());
+
+        System.out.println("Verifying actual user names equals to expected "
+                                + channelsPage.manufacturingManager5User.getText() + " user");
+        assertEquals(channelsPage.manufacturingManager5User.getText(), channelsPage.expectedManufacturingManager5User.getText());
+
+        System.out.println("Verifying actual user names equals to expected "
+                                + channelsPage.salesManagerUser.getText() + " user");
+        assertEquals(channelsPage.salesManagerUser.getText(), channelsPage.expectedSalesManagerUser.getText());
+
+    }
+
+    @Then("the manager sees sales channel members recipient and email")
+    public void the_manager_sees_sales_channel_members_recipient_and_email() {
+        System.out.println("Getting sales channel members recipient and email");
+
+        List<WebElement> allUsers = Driver.getDriver().findElements(By.xpath("//tbody[@class='ui-sortable']"));
+
+        for (WebElement str : allUsers) {
+            System.out.println(str.getText());
+        }
+
+    }
+
+
+
 
 
 
