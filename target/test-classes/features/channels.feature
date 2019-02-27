@@ -37,7 +37,6 @@ Feature: Channels functionality
     And the manager clicks on sales channel user name
     And the expected user names are equal to actual user names
 
-  @wip
   Scenario: As a manager user I should be able to see members recipient and email
     Then the manager clicks on Channels button
     When the manager clicks on sales channel

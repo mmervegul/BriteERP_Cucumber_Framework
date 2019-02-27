@@ -15,9 +15,6 @@ public class ChannelsPage {
     @FindBy(className = "o_mail_open_channels")
     public WebElement channelsButton;
 
-    @FindBy(className = "o_mail_open_channels")
-    public WebElement channelsLink;
-
     @FindBy(xpath = "//span[.='Events']")
     public WebElement eventsChannel;
 
@@ -45,26 +42,11 @@ public class ChannelsPage {
     @FindBy(xpath = "(//a[contains(text(),'SalesManager')])[2]")
     public WebElement expectedSalesManagerUser;
 
-    @FindBy(xpath = "//span[.='Close']")
-    public WebElement closeButton;
-
     @FindBy(xpath = "//td[contains(text(),'ManufacturingManager5')]")
     public WebElement manufacturingManager5User;
 
     @FindBy(xpath = "//td[contains(text(),'SalesManager')]")
     public WebElement salesManagerUser;
-
-    @FindBy(xpath = "(//button[@class='btn btn-primary pull-right btn-sm oe_kanban_action oe_kanban_action_button'])[3]")
-    public WebElement leaveButtonForTeamChannel;
-
-    @FindBy(xpath = "//div[@class='oe_module_vignette oe_kanban_global_click o_kanban_record']")
-    public WebElement allChannels;
-
-    @FindBy(linkText = "Members")
-    public WebElement members;
-
-    @FindBy(xpath = "//span[.='Discussion Group']")
-    public WebElement discussionGroup;
 
     @FindBy(xpath = "(//span[.='sales'])[1]")
     public WebElement firstSalesChannel;

@@ -12,18 +12,26 @@ public class StarredMessagePage {
     }
 
     @FindBy(xpath = "(//span[@class='o_channel_name'])[2]")
-    public WebElement starredMessageLinkButton;
+    public WebElement starredMessageButton;
 
     @FindBy(xpath = "(//div[@class='o_composer_input'])[1]")
     public WebElement writeSomethingBox;
 
     @FindBy(xpath = "(//i[@title='Mark as Todo'])[11]")
-    public WebElement starButton;
+    public WebElement starIcon;
+
+    @FindBy(xpath = "//p[.='world.....................']")
+    public WebElement starredMessageInStarredMessage;
+
+    @FindBy(xpath = "//div[@class='o_thread_message_content']//p[.='world.....................']")
+    public WebElement starredMessageInGeneralChannel;
 
     @FindBy(xpath = "//div[.='No starred message']")
     public WebElement emptyStarredMessageText;
 
     @FindBy(xpath = "//span[@class='o_mail_sidebar_needaction badge ']")
     public WebElement starredMessageCount;
+
+
 
 }
