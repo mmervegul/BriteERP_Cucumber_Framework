@@ -29,9 +29,6 @@ public class GeneralChannelPage {
     @FindBy(xpath = "(//span[@class='o_channel_name'])[3]")
     public WebElement discussionGroup;
 
-    @FindBy(id = "ui-id-2")
-    public WebElement clickName;
-
     @FindBy(xpath = "(//div[@title='general'])[1]")
     public WebElement generalChannel;
 

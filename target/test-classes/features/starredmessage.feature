@@ -33,12 +33,9 @@ Feature: Starred message functionality
     Then this message is displayed in starred message
     And the user name is displayed in starred message
 
+
   Scenario: As a manager user I should be able to delete starred message
     When the manager clicks on general channel
     Then this message is displayed in starred message
     And the manager deletes starred message
 
-   @wip
-   Scenario: As a manager user I should be able to see empty starred message text
-     And the manager deletes starred message
-     And the manager sees empty starred message text

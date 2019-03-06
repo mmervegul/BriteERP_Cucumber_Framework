@@ -1,4 +1,4 @@
-Feature: Login test
+Feature: Login functionality
 
   Background: Go to login page from homepage
     Given the manager is on the landing page

@@ -23,17 +23,11 @@ public class PrivateChannelPage {
     @FindBy(xpath = "(//button[@class='btn btn-sm btn-primary o_composer_button_send hidden-xs'])[1]")
     public WebElement sendButton;
 
-    @FindBy(xpath = "//div[@title='New team']")
-    public WebElement newTeamPrivateChannel;
-
     @FindBy(xpath = "(//button[@class='btn btn-sm btn-icon fa fa-smile-o o_composer_button_emoji'])[1]")
     public WebElement emojiButtonPrivateChannel;
 
     @FindBy(xpath = "//button[@title='Thumbs Up']")
     public WebElement thumbsUpEmoji;
-
-    @FindBy(xpath = "//div[@class='o_thread_message_content']//p")
-    public WebElement getMessage;
 
     @FindBy(xpath = "//button[@title='Unsubscribe from channel']")
     public WebElement unsubscribeButton;
