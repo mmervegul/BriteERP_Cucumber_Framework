@@ -1,14 +1,18 @@
 package com.cybertek.step_definitions;
 
 import com.cybertek.pages.ChannelsPage;
+import com.cybertek.utilities.DatabaseUtility;
 import com.cybertek.utilities.Driver;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
+import static com.cybertek.utilities.DatabaseUtility.createConnection;
 import static org.junit.Assert.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
+import java.util.Map;
 
 public class ChannelsPageStepDefinitions {
 
@@ -99,14 +103,17 @@ public class ChannelsPageStepDefinitions {
     public void the_expected_user_names_are_equal_to_actual_user_names() {
         System.out.println("Verifying actual user names equals to expected "
                                 + channelsPage.manufacturingManager4User.getText() + " user");
+
         assertEquals(channelsPage.manufacturingManager4User.getText(), channelsPage.expectedManufacturingManager4User.getText());
 
         System.out.println("Verifying actual user names equals to expected "
                                 + channelsPage.manufacturingManager5User.getText() + " user");
+
         assertEquals(channelsPage.manufacturingManager5User.getText(), channelsPage.expectedManufacturingManager5User.getText());
 
         System.out.println("Verifying actual user names equals to expected "
                                 + channelsPage.salesManagerUser.getText() + " user");
+
         assertEquals(channelsPage.salesManagerUser.getText(), channelsPage.expectedSalesManagerUser.getText());
 
     }
@@ -120,6 +127,59 @@ public class ChannelsPageStepDefinitions {
         for (WebElement str : allUsers) {
             System.out.println(str.getText());
         }
+    }
+
+    @Then("the manager clicks on Create button to create new channel")
+    public void the_manager_clicks_on_Create_button_to_create_new_channel() {
+        channelsPage.createButton.click();
+    }
+
+    @When("the manager writes channel name")
+    public void the_manager_writes_channel_name() {
+        channelsPage.channelNameBox.click();
+        channelsPage.channelNameBox.sendKeys("New Group");
+    }
+
+    @When("the manager writes channel description to Description box")
+    public void the_manager_writes_channel_description_to_Description_box() {
+        channelsPage.descriptionBox.sendKeys("Welcome to the New Group");
+    }
+
+    @Then("the manager clicks on Save button to crete new channel")
+    public void the_manager_clicks_on_Save_button_to_crete_new_channel() {
+        channelsPage.saveButton.click();
+    }
+
+    @Then("the manager clicks on new channel")
+    public void the_manager_clicks_on_new_channel() {
+        channelsPage.teamName.click();
+    }
+
+    List<Object> names;
+    @Then("the manager sees channel name in database")
+    public void the_manager_sees_channel_name_in_database() {
+        DatabaseUtility.createConnection();
+
+        String teamName = channelsPage.teamName.getText();
+
+        String sql = "SELECT name FROM mail_channel WHERE name = '" + teamName + "';";
+
+        names = DatabaseUtility.getColumnData(sql, "name");
+        System.out.println(names);
+    }
+
+    List<Object> description;
+    @Then("the manager sees channel description in database")
+    public void the_manager_sees_channel_description_in_database() {
+        DatabaseUtility.createConnection();
+
+        String teamDescription = channelsPage.teamDescription.getText();
+        System.out.println(teamDescription);
+
+        String sql = "SELECT description FROM mail_channel WHERE name = '" + teamDescription + "';";
+
+        description = DatabaseUtility.getColumnData(sql, "description");
+        System.out.println(description);
 
     }
 

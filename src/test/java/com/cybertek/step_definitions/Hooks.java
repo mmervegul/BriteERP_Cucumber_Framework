@@ -1,5 +1,6 @@
 package com.cybertek.step_definitions;
 
+import com.cybertek.utilities.DatabaseUtility;
 import com.cybertek.utilities.Driver;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -11,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Hooks {
 
-    @Before(order = 2)
+    @Before()
     public void setUp(){
         System.out.println("I am setting up the test from the Hooks class!!!");
         Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -33,6 +34,16 @@ public class Hooks {
 
         System.out.println("Closing driver");
         Driver.closeDriver();
+    }
+
+    @Before
+    public void setUpDBConnection() {
+        DatabaseUtility.createConnection();
+    }
+
+    @After
+    public void closeDBConnection(){
+        DatabaseUtility.closeConnection();
     }
 
 

@@ -57,6 +57,24 @@ public class ChannelsPage {
     @FindBy(xpath = "(//span[contains(text(), 'sales')])[1]")
     public WebElement salesChannelName;
 
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o-kanban-button-new btn-default']")
+    public WebElement createButton;
+
+    @FindBy(xpath = "//input[@name='name']")
+    public WebElement channelNameBox;
+
+    @FindBy(xpath = "//textarea[@name='description']")
+    public WebElement descriptionBox;
+
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_save']")
+    public WebElement saveButton;
+
+    @FindBy(xpath = "//span[.='New Group']")
+    public WebElement teamName;
+
+    @FindBy(xpath = "//span[@class='o_field_text o_field_widget']")
+    public WebElement teamDescription;
+
 
 
 }

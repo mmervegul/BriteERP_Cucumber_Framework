@@ -5,7 +5,7 @@ Feature: Crm functionality
     And the manager enters valid password
     And the manager clicks on Login button
 
-  @db @wip
+  @db
   Scenario Outline: As a manager user I should be able to create an opportunity
     When the manager clicks on CRM button
     Then the manager clicks on Crm Create button
