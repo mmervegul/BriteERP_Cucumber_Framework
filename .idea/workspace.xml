@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b2b6ad20-dde8-4602-b674-2386350fdfb7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/pages/ChannelsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/pages/ChannelsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/ChannelsPageStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/ChannelsPageStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cybertek/utilities/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cybertek/utilities/DatabaseUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/channels.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/channels.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/crm.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/crm.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/starredmessage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/starredmessage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/runners/CukesRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/ChannelsPageStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cybertek/step_definitions/ChannelsPageStepDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/channels.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/channels.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/starredmessage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/starredmessage.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/ChannelsPageStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+            <state relative-caret-position="290">
+              <caret line="178" column="96" lean-forward="true" selection-start-line="178" selection-start-column="96" selection-end-line="178" selection-end-column="96" />
               <folding>
                 <element signature="e#5216#5217#0" expanded="true" />
                 <element signature="e#5265#5266#0" expanded="true" />
@@ -292,7 +280,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552004436033" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552004703821" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -379,9 +367,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CukesRunner - 2019.03.07 at 17h 48m 15s.xml">
-      <configuration name="CukesRunner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CukesRunner - 2019.03.07 at 18h 05m 17s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
@@ -409,6 +394,9 @@
     <history-entry file="CukesRunner - 2019.03.07 at 19h 19m 54s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CukesRunner - 2019.03.07 at 19h 20m 49s.xml">
+      <configuration name="CukesRunner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -432,12 +420,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32554945" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.28947368" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.28947368" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22160664" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22160664" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.30357143" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32914925" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32548475" />
@@ -829,8 +817,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cybertek/step_definitions/ChannelsPageStepDefinitions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+        <state relative-caret-position="290">
+          <caret line="178" column="96" lean-forward="true" selection-start-line="178" selection-start-column="96" selection-end-line="178" selection-end-column="96" />
           <folding>
             <element signature="e#5216#5217#0" expanded="true" />
             <element signature="e#5265#5266#0" expanded="true" />

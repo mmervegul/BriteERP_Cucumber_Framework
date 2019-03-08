@@ -176,7 +176,7 @@ public class ChannelsPageStepDefinitions {
         String teamDescription = channelsPage.teamDescription.getText();
         System.out.println(teamDescription);
 
-        String sql = "SELECT description FROM mail_channel WHERE name = '" + teamDescription + "';";
+        String sql = "SELECT description FROM mail_channel WHERE description = '" + teamDescription + "';";
 
         description = DatabaseUtility.getColumnData(sql, "description");
         System.out.println(description);
