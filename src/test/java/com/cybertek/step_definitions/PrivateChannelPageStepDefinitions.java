@@ -24,13 +24,13 @@ public class PrivateChannelPageStepDefinitions {
 
     @Then("private channel plus sign is displayed")
     public void private_channel_plus_sign_is_displayed() {
-        System.out.println("Verifying private channel plus button is displayed");
+        System.out.println("Verifying private channels plus button is displayed");
         assertTrue(privateChannelPage.privateChannelPlusButton.isDisplayed());
     }
 
     @Then("the manager user enters private valid user name")
     public void the_manager_user_enters_private_valid_user_name() {
-        System.out.println("Adding new private valid user name to private channel");
+        System.out.println("Adding new private valid user name to private channels");
         privateChannelPage.addAPrivateChannelBox.sendKeys("SalesManager4", Keys.ENTER);
     }
 
@@ -42,7 +42,7 @@ public class PrivateChannelPageStepDefinitions {
 
     @Then("add a private channel box is displayed")
     public void add_a_private_channel_box_is_displayed() {
-        System.out.println("Verifying add a private channel box is displayed");
+        System.out.println("Verifying add a private channels box is displayed");
         privateChannelPage.addAPrivateChannelBox.isDisplayed();
     }
 
@@ -80,7 +80,7 @@ public class PrivateChannelPageStepDefinitions {
         String user = "SalesManager4";
         System.out.println(privateChannelPage.SalesManager4PrivateChannelName.getText().substring(2));
 
-        System.out.println("Verifying actual private channel name is equal to actual private channel name");
+        System.out.println("Verifying actual private channels name is equal to actual private channels name");
         assertTrue(privateChannelPage.SalesManager4PrivateChannelName.getText().contains(user));
 
     }

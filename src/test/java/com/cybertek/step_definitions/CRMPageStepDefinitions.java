@@ -2,6 +2,7 @@ package com.cybertek.step_definitions;
 
 import com.cybertek.pages.CrmPage;
 import com.cybertek.utilities.BrowserUtilities;
+import com.cybertek.utilities.DatabaseUtility;
 import com.cybertek.utilities.Driver;
 import com.cybertek.utilities.ExcelUtil;
 import cucumber.api.java.en.*;
@@ -126,6 +127,57 @@ public class CRMPageStepDefinitions {
         for(Map<String, String> user : userData.getDataList()){
             System.out.println(user.get("Priority"));
         }
+    }
+
+    @Then("the manager clicks on Sales Channels button")
+    public void the_manager_clicks_on_Sales_Channels_button() {
+        crmPage.salesChannels.click();
+    }
+
+    @When("the manager clicks on Create button to the create sales channel")
+    public void the_manager_clicks_on_Create_button_to_the_create_sales_channel() {
+        crmPage.salesChannelCreateButton.click();
+    }
+
+    @Then("the manager enters sales team name to the sales channel box")
+    public void the_manager_enters_sales_team_name_to_the_sales_channel_box() {
+        crmPage.salesChannelTeamNameBox.sendKeys("NewTeam");
+    }
+
+    @Then("the manager selects valid channel leader")
+    public void the_manager_selects_valid_channel_leader() {
+        crmPage.channelLeaderBox.click();
+        crmPage.EventsCRM_Manager4.click();
+    }
+
+    @Then("the manager enters email address to the email alias box")
+    public void the_manager_enters_email_address_to_the_email_alias_box() {
+        BrowserUtilities.wait(5);
+        crmPage.emailAliasBox.click();
+        crmPage.emailAliasBox.sendKeys("account123@gmail.com");
+    }
+
+    @Then("the manager creates new sales channel when create Save button")
+    public void the_manager_creates_new_sales_channel_when_create_Save_button() {
+        System.out.println("Clicking on save button");
+        crmPage.SalesSaveButton.click();
+        crmPage.salesChannels.click();
+    }
+
+    List<Object> channels;
+    @Then("the manager sees all sales channel name in database and contains new sales channel name")
+    public void the_manager_sees_all_sales_channel_name_in_database_and_contains_new_sales_channel_name() {
+        DatabaseUtility.createConnection();
+
+        String channelsName = crmPage.createdChannelName.getText();
+        System.out.println(channelsName);
+
+        String sql = "SELECT name FROM crm_team;";
+
+        channels = DatabaseUtility.getColumnData(sql, "name");
+        System.out.println(channels);
+
+        assertTrue(channels.contains(channelsName));
     }
 
 }

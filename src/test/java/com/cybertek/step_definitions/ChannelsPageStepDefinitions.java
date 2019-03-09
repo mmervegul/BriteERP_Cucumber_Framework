@@ -50,7 +50,7 @@ public class ChannelsPageStepDefinitions {
 
     @When("the manager clicks on Events channel")
     public void the_manager_clicks_on_Events_channel() {
-        System.out.println("Clicking on Events channel name");
+        System.out.println("Clicking on Events channels name");
         channelsPage.eventsChannel.click();
     }
 
@@ -74,15 +74,15 @@ public class ChannelsPageStepDefinitions {
 
     @When("the manager clicks on sales channel")
     public void the_manager_clicks_on_sales_channel() {
-        System.out.println("Clicking on sales channel name");
+        System.out.println("Clicking on sales channels name");
         channelsPage.firstSalesChannel.click();
     }
 
     @When("the channel name is equal to the sales channel name")
     public void the_channel_name_is_equal_to_the_sales_channel_name() {
-        System.out.println("Expected channel name is : " + channelsPage.firstSalesChannel.getText());
+        System.out.println("Expected channels name is : " + channelsPage.firstSalesChannel.getText());
 
-        System.out.println("Verifying actual channel name equals to expected channel name");
+        System.out.println("Verifying actual channels name equals to expected channels name");
         assertEquals(channelsPage.firstSalesChannel.getText(), channelsPage.salesChannelName.getText());
 
     }
@@ -120,7 +120,7 @@ public class ChannelsPageStepDefinitions {
 
     @Then("the manager sees sales channel members recipient and email")
     public void the_manager_sees_sales_channel_members_recipient_and_email() {
-        System.out.println("Getting sales channel members recipient and email");
+        System.out.println("Getting sales channels members recipient and email");
 
         List<WebElement> allUsers = Driver.getDriver().findElements(By.xpath("//tbody[@class='ui-sortable']"));
 
@@ -129,13 +129,13 @@ public class ChannelsPageStepDefinitions {
         }
     }
 
-    @Then("the manager clicks on Create button to create new channel")
-    public void the_manager_clicks_on_Create_button_to_create_new_channel() {
+    @Then("the manager creates new channel when click on the Create button")
+    public void the_manager_creates_new_channel_when_click_on_the_Create_button() {
         channelsPage.createButton.click();
     }
 
-    @When("the manager writes channel name")
-    public void the_manager_writes_channel_name() {
+    @When("the manager writes channel name to channel name box")
+    public void the_manager_writes_channel_name_to_channel_name_box() {
         channelsPage.channelNameBox.click();
         channelsPage.channelNameBox.sendKeys("New Group");
     }
@@ -155,6 +155,16 @@ public class ChannelsPageStepDefinitions {
         channelsPage.teamName.click();
     }
 
+    @When("the manager sees channel name in Channels")
+    public void the_manager_sees_channel_name_in_Channels() {
+        System.out.println(channelsPage.verifyChannelName.getText());
+    }
+
+    @When("the manager sees channel description in Channels")
+    public void the_manager_sees_channel_description_in_Channels() {
+        System.out.println(channelsPage.verifyDescription.getText());
+    }
+
     List<Object> names;
     @Then("the manager sees channel name in database")
     public void the_manager_sees_channel_name_in_database() {
@@ -166,6 +176,7 @@ public class ChannelsPageStepDefinitions {
 
         names = DatabaseUtility.getColumnData(sql, "name");
         System.out.println(names);
+
     }
 
     List<Object> description;

@@ -29,19 +29,19 @@ public class GeneralChannelPageStepDefinitions {
 
     @When("Add a channel box is displayed")
     public void add_a_channel_box_is_displayed() {
-        System.out.println("Verifying add a channel box is displayed");
+        System.out.println("Verifying add a channels box is displayed");
         assertTrue(generalChannelPage.addAChannelBox.isDisplayed());
     }
 
     @When("the manager user clicks on Add a channel box")
     public void the_manager_user_clicks_on_Add_a_channel_box() {
-        System.out.println("Clicking on Add a channel box");
+        System.out.println("Clicking on Add a channels box");
         generalChannelPage.addAChannelBox.click();
     }
 
     @Then("the manager user writes channel name to the Add a channel box")
     public void the_manager_user_writes_channel_name_to_the_Add_a_channel_box() {
-        System.out.println("Writing new channel name to the Add a channel box");
+        System.out.println("Writing new channels name to the Add a channels box");
         generalChannelPage.addAChannelBox.sendKeys("new team");
     }
 
@@ -59,25 +59,25 @@ public class GeneralChannelPageStepDefinitions {
 
     @Then("the manager clicks on channel name")
     public void the_manager_clicks_on_channel_name() {
-        System.out.println("Clicking on new channel name");
+        System.out.println("Clicking on new channels name");
         generalChannelPage.newTeam.click();
 
     }
 
     @Then("the manager sees created channel message when click on the channel name")
     public void the_manager_sees_created_channel_message_when_click_on_the_channel_name() {
-        System.out.println("Clicking on new team channel");
+        System.out.println("Clicking on new team channels");
         generalChannelPage.newTeam.click();
 
         System.out.println("Verifying message is : " + generalChannelPage.createdChannelText.getText());
 
-        System.out.println("Verifying actual channel text is equals expected channel text");
+        System.out.println("Verifying actual channels text is equals expected channels text");
         assertTrue(generalChannelPage.createdChannelText.getText().equals("created #new team"));
     }
 
     @When("the manager clicks Discussion Group channel")
     public void the_manager_clicks_Discussion_Group_channel() {
-        System.out.println("Clicking on Discussion Group channel");
+        System.out.println("Clicking on Discussion Group channels");
         generalChannelPage.discussionGroup.click();
     }
 
@@ -114,7 +114,7 @@ public class GeneralChannelPageStepDefinitions {
 
     @Then("the manager clicks on second Invite button")
     public void the_manager_clicks_on_second_Invite_button() {
-        System.out.println("Clicking on second Invite button to channel");
+        System.out.println("Clicking on second Invite button to channels");
         generalChannelPage.secondInviteButton.click();
     }
 
@@ -131,7 +131,7 @@ public class GeneralChannelPageStepDefinitions {
 
     @When("the manager clicks on general channel")
     public void the_manager_clicks_on_general_channel() {
-        System.out.println("Clicking on general channel");
+        System.out.println("Clicking on general channels");
         generalChannelPage.generalChannel.click();
     }
 

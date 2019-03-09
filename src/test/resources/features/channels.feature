@@ -44,14 +44,16 @@ Feature: Channels functionality
     Then the manager clicks on Members button
     And the manager sees sales channel members recipient and email
 
-  @db @wip
+  @db
   Scenario: As a manager user I should be able to create new channel
     Then the manager clicks on Channels button
-    Then the manager clicks on Create button to create new channel
-    When the manager writes channel name
+    Then the manager creates new channel when click on the Create button
+    When the manager writes channel name to channel name box
     And the manager writes channel description to Description box
     Then the manager clicks on Save button to crete new channel
     Then the manager clicks on new channel
+    When the manager sees channel name in Channels
+    When the manager sees channel description in Channels
     Then the manager sees channel name in database
     Then the manager sees channel description in database
 

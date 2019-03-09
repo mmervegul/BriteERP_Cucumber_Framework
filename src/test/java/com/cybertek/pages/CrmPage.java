@@ -32,14 +32,33 @@ public class CrmPage {
     @FindBy(xpath = "//span[.='Create']")
     public WebElement lastCreateButton;
 
+    @FindBy(xpath = "(//span[@class='oe_menu_text'])[32]")
+    public WebElement salesChannels;
 
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_list_button_add']")
+    public WebElement salesChannelCreateButton;
 
-    @FindBy()
-    public WebElement customerName;
+    @FindBy(xpath = "//input[@class='o_field_char o_field_widget o_input o_required_modifier']")
+    public WebElement salesChannelTeamNameBox;
 
-    @FindBy()
-    public WebElement customerPriority;
+    @FindBy(xpath = "(//input[@class='o_input ui-autocomplete-input'])[1]")
+    public WebElement channelLeaderBox;
 
+    @FindBy(xpath = "//a[.='EventsCRM_Manager4']")
+    public WebElement EventsCRM_Manager4;
 
+    @FindBy(xpath = "//input[@class='o_field_char o_field_widget o_input oe_inline']")
+    public WebElement emailAliasBox;
+
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_save']")
+    public WebElement SalesSaveButton;
+
+    //td[contains(text(),'NewTeam')]
+
+    @FindBy(xpath = "//td[.='NewTeam']")
+    public WebElement createdChannelName;
+
+    @FindBy(xpath = "//td[contains(text(),'EventsCRM_Manager4')]")
+    public WebElement selectedChannelLeader;
 
 }

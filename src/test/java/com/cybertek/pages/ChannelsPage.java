@@ -75,6 +75,11 @@ public class ChannelsPage {
     @FindBy(xpath = "//span[@class='o_field_text o_field_widget']")
     public WebElement teamDescription;
 
+    @FindBy(xpath = "//span[@class='o_field_char o_field_widget o_required_modifier']")
+    public WebElement verifyChannelName;
+
+    @FindBy(xpath = "//span[@class='o_field_text o_field_widget']")
+    public WebElement verifyDescription;
 
 
 }

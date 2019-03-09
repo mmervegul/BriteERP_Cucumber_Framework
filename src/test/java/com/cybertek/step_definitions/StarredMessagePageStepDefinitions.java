@@ -22,7 +22,7 @@ public class StarredMessagePageStepDefinitions {
 
     @Then("the general channel messages are displayed")
     public void the_general_channel_messages_are_displayed() {
-        System.out.println("Displaying general channel messages");
+        System.out.println("Displaying general channels messages");
 
         List<WebElement> messages = Driver.getDriver().findElements(By.xpath("//div[@class='o_thread_message_content']"));
 

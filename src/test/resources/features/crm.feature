@@ -31,5 +31,19 @@ Feature: Crm functionality
       |Test1               |Robert Miller|1200            |1       |
       |Active Users Project|Mary Taylor  |1020            |1       |
 
+  @db @wip
+  Scenario: As a manager user I should be able to create sales channel
+    When the manager clicks on CRM button
+    Then the manager clicks on Sales Channels button
+    When the manager clicks on Create button to the create sales channel
+    Then the manager enters sales team name to the sales channel box
+    Then the manager selects valid channel leader
+    And the manager enters email address to the email alias box
+    And the manager creates new sales channel when create Save button
+    And the manager sees all sales channel name in database and contains new sales channel name
+
+
+
+
 
 
