@@ -73,12 +73,7 @@ public class ContactsPageStepDefinitions {
         BrowserUtilities.wait(5);
     }
 
-    List<Object> contactNames;
-    List<Object> contactWebsite;
-    List<Object> contactJobPosition;
-    List<Object> contactEmail;
-    List<Object> contactPhoneNumber;
-    List<Object> contactNote;
+    List<Object> contactNames, contactWebsite, contactJobPosition, contactEmail, contactPhoneNumber, contactNote;
     @Then("the manager sees contact name, website, job position, email, phone number and notes from database")
     public void the_manager_sees_contact_name_website_job_position_email_phone_number_and_notes_from_database() {
         DatabaseUtility.createConnection();
