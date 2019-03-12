@@ -43,7 +43,6 @@ public class CRMPageStepDefinitions {
         crmPage.customer.sendKeys(customer);
         crmPage.lastCreateButton.click();
         Driver.getDriver().findElement(By.xpath("(//button[@class='btn btn-sm btn-primary'])[3]")).click();
-
     }
 
     @Then("the manager enters expected revenue to {string}")
@@ -80,7 +79,6 @@ public class CRMPageStepDefinitions {
         for(WebElement allCustomer : customers){
             System.out.println(allCustomer.getText());
         }
-
     }
 
     @Then("the manager should be able to see {string} expected revenue")

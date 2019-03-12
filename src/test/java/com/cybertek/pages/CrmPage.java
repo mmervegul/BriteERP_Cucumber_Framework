@@ -53,12 +53,8 @@ public class CrmPage {
     @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_save']")
     public WebElement SalesSaveButton;
 
-    //td[contains(text(),'NewTeam')]
-
     @FindBy(xpath = "//td[.='NewTeam']")
     public WebElement createdChannelName;
 
-    @FindBy(xpath = "//td[contains(text(),'EventsCRM_Manager4')]")
-    public WebElement selectedChannelLeader;
 
 }
